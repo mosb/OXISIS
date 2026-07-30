@@ -4,9 +4,14 @@ layout: default
 <main class="cover">
   <h1 class="name">Oxisis AI</h1>
   <p class="strap">Advisory in machine intelligence.</p>
-  <a class="contact" href="mailto:oxisis.ai@pm.me">Contact</a>
+  <a class="contact" href="#" data-u="ia.sisixo" data-d="em.mp">Contact</a>
 </main>
 <footer class="colophon">
   <p>Oxisis AI Ltd</p>
   <p class="credit">Photograph by <a href="https://unsplash.com/@juzwe">Julian Zwengel</a> on <a href="https://unsplash.com/photos/HbBfZi_sGnU">Unsplash</a></p>
 </footer>
+<script>
+  var contact = document.querySelector('.contact');
+  var rev = function (s) { return s.split('').reverse().join(''); };
+  contact.href = 'mailto:' + rev(contact.dataset.u) + '@' + rev(contact.dataset.d);
+</script>
