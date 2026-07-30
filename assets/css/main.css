@@ -52,6 +52,23 @@ body {
   text-shadow: 0 1px 16px rgba(4, 6, 10, 0.5);
 }
 
+.contact {
+  margin-top: 2.6rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(226, 229, 236, 0.62);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(226, 229, 236, 0.28);
+  padding-bottom: 0.2em;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact:hover {
+  color: #f4f5f7;
+  border-color: rgba(244, 245, 247, 0.6);
+}
+
 .colophon {
   position: fixed;
   left: 0;
